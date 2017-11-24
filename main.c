@@ -31,11 +31,12 @@ int main(void)
 {
 	UFR_STATUS status;
 
-	printf("\n* uFCoder library version: %s\n\n", GetDllVersionStr());
+	puts("Test ReaderOpen version 1.0\n");
+	//--------------------------------------------------------------
+	printf("* uFCoder library version: %s\n\n", GetDllVersionStr());
 	//--------------------------------------------------------------
 
-	puts("Test opening Digital Logic shield uFR RS232 on RPi: 1.0\n");
-
+	puts("Test opening Digital Logic shield uFR RS232 on RPi:");
 	status = reader_open_ex(2, "/dev/serial0", 10);
 
 	status = ReaderUISignal(3, 3);
